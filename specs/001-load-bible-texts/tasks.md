@@ -11,10 +11,11 @@ description: "Task list for feature implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 [P] Create the directory for data files at `public/data`
-- [ ] T002 [P] Create a sample data file with at least 3 Bible text objects at `public/data/bible-texts.json`
-- [ ] T003 [P] Create a directory for type definitions at `app/lib`
-- [ ] T004 [P] Create a directory for UI components at `app/components`
+- [X] T000 Initialize Next.js project and install dependencies (create `package.json`, run `npm install`)
+- [X] T001 [P] Create the directory for data files at `public/data`
+- [X] T002 [P] Create a sample data file with at least 3 Bible text objects at `public/data/bible-texts.json`
+- [X] T003 [P] Create a directory for type definitions at `app/lib`
+- [X] T004 [P] Create a directory for UI components at `app/components`
 
 ---
 
@@ -22,9 +23,9 @@ description: "Task list for feature implementation"
 
 **Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
 
-- [ ] T005 Define the `BibleText` type in `app/lib/types.ts` based on the data model
-- [ ] T006 Implement a data fetching utility in `app/lib/data.ts` to read and parse `public/data/bible-texts.json`
-- [ ] T007 The data utility MUST handle file-not-found and JSON parsing errors gracefully
+- [X] T005 Define the `BibleText` type in `app/lib/types.ts` based on the data model
+- [X] T006 Implement a data fetching utility in `app/lib/data.ts` to read and parse `public/data/bible-texts.json`
+- [X] T007 The data utility MUST handle file-not-found and JSON parsing errors gracefully
 
 ---
 
@@ -35,12 +36,12 @@ description: "Task list for feature implementation"
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] Create a `BibleTextView` component in `app/components/BibleTextView.tsx` to display a single Bible text
-- [ ] T009 [US1] The `BibleTextView` component should accept a `BibleText` object as a prop
-- [ ] T010 [US1] Implement the main page at `app/page.tsx` to fetch and display a random Bible text on initial load
-- [ ] T011 [US1] Use client-side state management (e.g., `useState`, `useEffect`) in `app/page.tsx` for fetching and storing the text
-- [ ] T012 [US1] Display a loading indicator while the text is being fetched
-- [ ] T013 [US1] Display a user-friendly error message if the text cannot be loaded
+- [X] T008 [US1] Create a `BibleTextView` component in `app/components/BibleTextView.tsx` to display a single Bible text
+- [X] T009 [US1] The `BibleTextView` component should accept a `BibleText` object as a prop
+- [X] T010 [US1] Implement the main page at `app/page.tsx` to fetch and display a random Bible text on initial load
+- [X] T011 [US1] Use client-side state management (e.g., `useState`, `useEffect`) in `app/page.tsx` for fetching and storing the text
+- [X] T012 [US1] Display a loading indicator while the text is being fetched
+- [X] T013 [US1] Display a user-friendly error message if the text cannot be loaded
 
 ---
 
@@ -51,10 +52,10 @@ description: "Task list for feature implementation"
 
 ### Implementation for User Story 2
 
-- [ ] T014 [P] [US2] Add a "New Text" button to the `app/page.tsx` component
-- [ ] T015 [US2] Implement an `onClick` event handler for the "New Text" button
-- [ ] T016 [US2] The event handler should fetch a new random Bible text from the data utility
-- [ ] T017 [US2] Update the component's state to display the new Bible text
+- [X] T014 [P] [US2] Add a "New Text" button to the `app/page.tsx` component
+- [X] T015 [US2] Implement an `onClick` event handler for the "New Text" button
+- [X] T016 [US2] The event handler should fetch a new random Bible text from the data utility
+- [X] T017 [US2] Update the component's state to display the new Bible text
 
 ---
 
@@ -62,9 +63,9 @@ description: "Task list for feature implementation"
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T018 [P] Add basic styling to the `BibleTextView` component and the main page in `app/globals.css`
-- [ ] T019 Review and refactor the code for clarity, performance, and adherence to React best practices
-- [ ] T020 Validate the final implementation against the scenarios in `quickstart.md`
+- [X] T018 [P] Add basic styling to the `BibleTextView` component and the main page in `app/globals.css`
+- [X] T019 Review and refactor the code for clarity, performance, and adherence to React best practices
+- [X] T020 Validate the final implementation against the scenarios in `quickstart.md`
 
 ---
 
