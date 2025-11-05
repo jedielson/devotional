@@ -20,10 +20,8 @@ description: "Task list template for feature implementation"
 
 ## Path Conventions
 
-- **Single project**: `src/`, `tests/` at repository root
-- **Web app**: `backend/src/`, `frontend/src/`
-- **Mobile**: `api/src/`, `ios/src/` or `android/src/`
-- Paths shown below assume single project - adjust based on plan.md structure
+- **Next.js app**: `app/`, `public/`, `tests/` at repository root
+- Paths shown below assume Next.js App Router structure - adjust based on plan.md
 
 <!-- 
   ============================================================================
@@ -48,9 +46,9 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
+- [ ] T001 Create Next.js project structure per implementation plan
+- [ ] T002 Initialize Next.js project with dependencies
+- [ ] T003 [P] Configure linting (ESLint) and formatting (Prettier) tools
 
 ---
 
@@ -62,11 +60,11 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
-- [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
+- [ ] T004 Define data structures/types for JSON data in `app/lib/types.ts`
+- [ ] T005 [P] Implement data fetching service for local JSON files in `app/lib/data.ts`
+- [ ] T006 [P] Setup global styles and theme in `app/styles/`
+- [ ] T007 Create layout component in `app/layout.tsx`
+- [ ] T008 Configure error handling (e.g., `error.tsx`) and loading UI (`loading.tsx`)
 - [ ] T009 Setup environment configuration management
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
@@ -83,17 +81,16 @@ Examples of foundational tasks (adjust based on your project):
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [ ] T010 [P] [US1] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T011 [P] [US1] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T010 [P] [US1] Component test for [Component] in `tests/components/[component].test.tsx`
+- [ ] T011 [P] [US1] E2E test for [user journey] using Playwright/Cypress
 
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
-- [ ] T017 [US1] Add logging for user story 1 operations
+- [ ] T012 [P] [US1] Create [Component1] in `app/components/[component1].tsx`
+- [ ] T013 [P] [US1] Create [Component2] in `app/components/[component2].tsx`
+- [ ] T014 [US1] Implement page for the feature in `app/(pages)/[feature]/page.tsx`
+- [ ] T015 [US1] Add validation and error handling on the client-side
+- [ ] T016 [US1] Add logging for user story 1 operations
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -107,15 +104,14 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Tests for User Story 2 (OPTIONAL - only if tests requested) ⚠️
 
-- [ ] T018 [P] [US2] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T019 [P] [US2] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T017 [P] [US2] Component test for [Component] in `tests/components/[component].test.tsx`
+- [ ] T018 [P] [US2] E2E test for [user journey]
 
 ### Implementation for User Story 2
 
-- [ ] T020 [P] [US2] Create [Entity] model in src/models/[entity].py
-- [ ] T021 [US2] Implement [Service] in src/services/[service].py
-- [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T023 [US2] Integrate with User Story 1 components (if needed)
+- [ ] T019 [P] [US2] Create [Component] in `app/components/[component].tsx`
+- [ ] T020 [US2] Implement page for the feature in `app/(pages)/[feature]/page.tsx`
+- [ ] T021 [US2] Integrate with User Story 1 components (if needed)
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -129,16 +125,16 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Tests for User Story 3 (OPTIONAL - only if tests requested) ⚠️
 
-- [ ] T024 [P] [US3] Contract test for [endpoint] in tests/contract/test_[name].py
-- [ ] T025 [P] [US3] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T022 [P] [US3] Component test for [Component] in `tests/components/[component].test.tsx`
+- [ ] T023 [P] [US3] E2E test for [user journey]
 
 ### Implementation for User Story 3
 
-- [ ] T026 [P] [US3] Create [Entity] model in src/models/[entity].py
-- [ ] T027 [US3] Implement [Service] in src/services/[service].py
-- [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py
+- [ ] T024 [P] [US3] Create [Component] in `app/components/[component].tsx`
+- [ ] T025 [US3] Implement page for the feature in `app/(pages)/[feature]/page.tsx`
 
 **Checkpoint**: All user stories should now be independently functional
+
 
 ---
 
