@@ -1,50 +1,30 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: v1.0.0 → v1.1.0
+- List of modified principles:
+  - "II. Client-Side Rendering (CSR) with Static Data" → "II. Client-Side Rendering (CSR) with Next.js"
+  - "III. Modern Frontend Stack" → "III. Next.js-based Stack"
+- Added sections: none
+- Removed sections: none
+- Templates requiring updates (✅ updated):
+  - .specify/templates/plan-template.md
+  - .specify/templates/tasks-template.md
+- Follow-up TODOs: none
+-->
+# Devotional Life Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Simplicity and Focus
+The application must maintain a clean, simple, and focused user interface, avoiding unnecessary complexity. The primary goal is to aid in devotional life, not to be a feature-rich, all-encompassing productivity tool. This ensures the user can focus on their devotional activities without distraction.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Client-Side Rendering (CSR) with Next.js
+The application will be a single-page application (SPA) built with Next.js, strictly using its Client-Side Rendering (CSR) capabilities. All data will be stored in local JSON files and managed on the client-side. No server-side rendering (SSR) or complex backend database is required for the initial versions. This provides a robust framework while simplifying deployment.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
-
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
-
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### III. Next.js-based Stack
+The project will use Next.js as the core framework. Dependencies should be kept up-to-date to ensure long-term maintainability and leverage the latest performance and security improvements from the Next.js ecosystem.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This Constitution is the guiding document for the project. All development, features, and contributions must align with its principles. Amendments require discussion and agreement among the core contributors.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: 2025-11-05 | **Last Amended**: 2025-11-05
