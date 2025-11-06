@@ -24,7 +24,10 @@ The application will be a single-page application (SPA) built with Next.js, stri
 ### III. Next.js-based Stack
 The project will use Next.js as the core framework. Dependencies should be kept up-to-date to ensure long-term maintainability and leverage the latest performance and security improvements from the Next.js ecosystem.
 
+### IV. Git and Version Control
+Commit messages must adhere to the Conventional Commits specification. The body of the commit message should explain the "what" and "why" of the change, but it should not include a list of modified files, as this information is already part of the commit metadata.
+
 ## Governance
 This Constitution is the guiding document for the project. All development, features, and contributions must align with its principles. Amendments require discussion and agreement among the core contributors.
 
-**Version**: 1.1.0 | **Ratified**: 2025-11-05 | **Last Amended**: 2025-11-05
+**Version**: 1.1.0 | **Ratified**: 2025-11-05 | **Last Amended**: 2025-11-06
