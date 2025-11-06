@@ -16,5 +16,20 @@
     "chapter": 4,
     "verse": 13,
     "text": "I can do all things through Christ who strengthens me."
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "verse": 16,
+    "endVerse": 18,
+    "text": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him. Whoever believes in him is not condemned, but whoever does not believe is condemned already, because he has not believed in the name of the only Son of God."
+  },
+  {
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 24,
+      "endChapter": 8,
+      "endVerse": 1,
+      "text": "Wretched man that I am! Who will deliver me from this body of death? Thanks be to God through Jesus Christ our Lord! So then, I myself serve the law of God with my mind, but with my flesh I serve the law of sin. There is therefore now no condemnation for those who are in Christ Jesus."
   }
 ]
